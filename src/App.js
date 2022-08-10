@@ -1,5 +1,13 @@
-import React from 'react'
+// Imports - React
+import React from 'react';
 import { useEffect } from 'react';
+
+// Imports - Components
+import MovieCard from './MovieCard';
+
+// Imports - Other
+import './App.css';
+import SearchIcon from './search.svg';
 
 
 
@@ -20,7 +28,19 @@ const App = () => {
 
 
     return (
-        <h1>The app is running.</h1>
+        <div className='app'>
+            <h1>MovieLand</h1>
+
+
+            <div className='search'>
+                <input placeholder='Movie title...' value='Superman' onChange={() => { }} />
+                <img src={SearchIcon} alt='Search' onClick={() => { }} />
+            </div>
+
+            <div className='container'>
+
+            </div>
+        </div>
     );
 };
 
